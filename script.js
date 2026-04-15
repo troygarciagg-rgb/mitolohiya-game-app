@@ -10,6 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // 1b. Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    const setNavOpen = (isOpen) => {
+        if (!navbar || !navToggle || !navLinks) return;
+        navbar.classList.toggle('nav-open', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+        document.body.classList.toggle('nav-lock', isOpen);
+    };
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navbar && navbar.classList.contains('nav-open');
+            setNavOpen(!isOpen);
+        });
+    }
+
     // 2. Smooth Scrolling for Nav Links
     document.querySelectorAll('.nav-links a, .nav-cta, .cta-large').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -23,8 +42,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         block: 'start'
                     });
                 }
+                // Close mobile menu after navigation
+                setNavOpen(false);
             }
         });
+    });
+
+    // Close mobile nav on Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setNavOpen(false);
     });
 
     // 3. Archipelago Controls

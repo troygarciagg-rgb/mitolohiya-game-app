@@ -13,11 +13,16 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <a href="#home" class="logo">
             <img src="./img/logo/Logo.png" alt="Mitolohiya Logo">
         </a>
-        <ul class="nav-links">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-links" id="primary-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#regions">Regions</a></li>
             <li><a href="#creatures">Beastiary</a></li>
