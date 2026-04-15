@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitolohiya: Ang Kasunduan</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="./img/logo/Logo.png" alt="Mitolohiya Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#regions">Regions</a></li>
+            <li><a href="#creatures">Beastiary</a></li>
+            <li><a href="#items">Agimat</a></li>
+            <li><a href="#typechart">Type Chart</a></li>
+        </ul>
+        <a href="#download" class="btn-primary nav-cta">Download</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="./img/poster/ce982100-c23d-463e-aa4d-16fded10807c.jpg" alt="Mitolohiya Poster Background">
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+            <img src="./img/logo/Logo.png" alt="Mitolohiya Logo" class="hero-logo">
+            <h1 class="sr-only">Mitolohiya: Ang Kasunduan</h1>
+            <p>A Philippine Mythology Creature Catcher. Forge pacts with ancient entities, master elements, and uncover the folklore of the islands.</p>
+            <a href="#about" class="btn-primary cta-large">Begin the Journey</a>
+        </div>
+    </header>
+
+    <!-- About & Map -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore the Archipelago</h2>
+                <div class="separator"></div>
+                <p>Welcome to a realm where folklore breathes and history is alive. Begin your adventure in the verdant lands of Luzon.</p>
+            </div>
+            
+            <div class="map-showcase">
+                <div class="archipelago-tabs">
+                    <button class="btn-archipelago" data-target="luzon">Luzon</button>
+                    <button class="btn-archipelago" data-target="visayas">Visayas</button>
+                    <button class="btn-archipelago" data-target="mindanao">Mindanao</button>
+                </div>
+                
+                <div class="map-body">
+                    <div class="map-main">
+                        <div class="ph-map-container" id="ph-map-container">
+                            <img src="./img/Map/PHmap.png" alt="Philippine Map" id="ph-map" class="ph-map">
+                        </div>
+                    </div>
+                    
+                    <div class="regions-container">
+                        <!-- EXPLORE PLACEHOLDER -->
+                        <div class="explore-placeholder active-archipelago" id="explore-placeholder">
+                            <div class="explore-content card-glass">
+                                <h3>Explore the Archipelago</h3>
+                                <div class="separator"></div>
+                                <p>Select an island group from the tabs to uncover the myths, forgotten deities, and ancient entities bound to the lands.</p>
+                            </div>
+                        </div>
+
+                        <!-- LUZON -->
+                        <div class="regions-grid hidden-archipelago" id="luzon-grid">
+                            <div class="region-card card-glass">
+                                <img src="./img/Map/Luzon Regions List/region1.png" alt="Region 1">
+                                <div class="rc-info">
+                                    <h3>Ilocos Region</h3>
+                                    <p>A land of rugged coastlines and ancient spirits.</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <img src="./img/Map/Luzon Regions List/region2.png" alt="Region 2">
+                                <div class="rc-info">
+                                    <h3>Cagayan Valley</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <img src="./img/Map/Luzon Regions List/region3.png" alt="Region 3">
+                                <div class="rc-info">
+                                    <h3>Central Luzon</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <img src="./img/Map/Luzon Regions List/region4.png" alt="Region 4">
+                                <div class="rc-info">
+                                    <h3>CALABARZON</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <img src="./img/Map/Luzon Regions List/region5.png" alt="Region 5">
+                                <div class="rc-info">
+                                    <h3>Bicol Region</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info">
+                                    <h3>MIMAROPA, CAR, NCR</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VISAYAS -->
+                        <div class="regions-grid hidden-archipelago" id="visayas-grid">
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info">
+                                    <h3>Western Visayas</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info">
+                                    <h3>Central Visayas</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info">
+                                    <h3>Eastern Visayas</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info">
+                                    <h3>Negros Island Region</h3>
+                                    <p class="coming-soon">Creatures Coming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MINDANAO -->
+                        <div class="regions-grid hidden-archipelago" id="mindanao-grid">
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>Zamboanga Peninsula</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>Northern Mindanao</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>Davao Region</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>SOCCSKSARGEN</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>Caraga</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                            <div class="region-card card-glass locked">
+                                <div class="placeholder-img"></div>
+                                <div class="rc-info"><h3>BARMM</h3><p class="coming-soon">Creatures Coming Soon</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creatures (Beastiary) -->
+    <section class="section creatures-section" id="creatures">
+        <div class="container">
+            <div class="section-header">
+                <h2>Region 1 Encounters</h2>
+                <div class="separator"></div>
+                <p>The mythological entities you will encounter in the Ilocos Region.</p>
+            </div>
+
+            <div class="creature-grid">
+
+                <!-- Tirtiris (ID 2) -->
+                <div class="creature-card card-glass">
+                    <div class="creature-image-wrapper">
+                        <img src="./img/Creature/Region_01/Tirtiris/front.png" alt="Tirtiris" class="creature-front">
+                        <div class="badges">
+                            <img src="./img/TypeImages/diwa.png" alt="Diwa Type" class="type-badge" title="Diwa">
+                            <img src="./img/TypeImages/hayop.png" alt="Hayop Type" class="type-badge" title="Hayop">
+                            <img src="./img/RaritySprite/Karaniwan.png" alt="Karaniwan" class="rarity-badge" title="Karaniwan (Common)">
+                        </div>
+                    </div>
+                    <div class="creature-info">
+                        <h3>Tirtiris</h3>
+                        <div class="stats">
+                            <div class="stat"><span class="label">HP</span><div class="bar"><div class="fill" style="width: 43%;"></div></div><span class="stat-val">65</span></div>
+                            <div class="stat"><span class="label">ATK</span><div class="bar"><div class="fill" style="width: 17%;"></div></div><span class="stat-val">25</span></div>
+                            <div class="stat"><span class="label">DEF</span><div class="bar"><div class="fill" style="width: 33%;"></div></div><span class="stat-val">50</span></div>
+                            <div class="stat"><span class="label">SpATK</span><div class="bar"><div class="fill" style="width: 27%;"></div></div><span class="stat-val">40</span></div>
+                            <div class="stat"><span class="label">SpDEF</span><div class="bar"><div class="fill" style="width: 30%;"></div></div><span class="stat-val">45</span></div>
+                            <div class="stat"><span class="label">SPD</span><div class="bar"><div class="fill" style="width: 30%;"></div></div><span class="stat-val">45</span></div>
+                        </div>
+                        <p class="lore">Tiny folk no larger than a human hand, dwelling within the twisting bagbagotot vines of Ilocano backyards. By nightfall, they emerge — teeth of pure gold, noses long and delicate, skin pale as moonlight.</p>
+                    </div>
+                </div>
+
+                <!-- Batibat (ID 3) -->
+                <div class="creature-card card-glass">
+                    <div class="creature-image-wrapper">
+                        <img src="./img/Creature/Region_01/batibat/front.png" alt="Batibat" class="creature-front">
+                        <div class="badges">
+                            <img src="./img/TypeImages/anino.png" alt="Anino Type" class="type-badge" title="Anino">
+                            <img src="./img/TypeImages/lupa.png" alt="Lupa Type" class="type-badge" title="Lupa">
+                            <img src="./img/RaritySprite/Bihira.png" alt="Bihira" class="rarity-badge" title="Bihira (Rare)">
+                        </div>
+                    </div>
+                    <div class="creature-info">
+                        <h3>Batibat</h3>
+                        <div class="stats">
+                            <div class="stat"><span class="label">HP</span><div class="bar"><div class="fill" style="width: 73%;"></div></div><span class="stat-val">110</span></div>
+                            <div class="stat"><span class="label">ATK</span><div class="bar"><div class="fill" style="width: 63%;"></div></div><span class="stat-val">95</span></div>
+                            <div class="stat"><span class="label">DEF</span><div class="bar"><div class="fill" style="width: 80%;"></div></div><span class="stat-val">120</span></div>
+                            <div class="stat"><span class="label">SpATK</span><div class="bar"><div class="fill" style="width: 40%;"></div></div><span class="stat-val">60</span></div>
+                            <div class="stat"><span class="label">SpDEF</span><div class="bar"><div class="fill" style="width: 67%;"></div></div><span class="stat-val">100</span></div>
+                            <div class="stat"><span class="label">SPD</span><div class="bar"><div class="fill" style="width: 17%;"></div></div><span class="stat-val">25</span></div>
+                        </div>
+                        <p class="lore">A vengeful tree spirit that crushes those who disturb its dwelling. It appears at night, sitting on its victim's chest, feeding on their breath and fear.</p>
+                    </div>
+                </div>
+
+                <!-- Berberoka (ID 4) -->
+                <div class="creature-card card-glass">
+                    <div class="creature-image-wrapper">
+                        <img src="./img/Creature/Region_01/Berberoka/front.png" alt="Berberoka" class="creature-front">
+                        <div class="badges">
+                            <img src="./img/TypeImages/tubig.png" alt="Tubig Type" class="type-badge" title="Tubig">
+                            <img src="./img/TypeImages/anino.png" alt="Anino Type" class="type-badge" title="Anino">
+                            <img src="./img/RaritySprite/BahagyangBihira.png" alt="BahagyangBihira" class="rarity-badge" title="Bahayang Bihira (Uncommon)">
+                        </div>
+                    </div>
+                    <div class="creature-info">
+                        <h3>Berberoka</h3>
+                        <div class="stats">
+                            <div class="stat"><span class="label">HP</span><div class="bar"><div class="fill" style="width: 63%;"></div></div><span class="stat-val">95</span></div>
+                            <div class="stat"><span class="label">ATK</span><div class="bar"><div class="fill" style="width: 77%;"></div></div><span class="stat-val">115</span></div>
+                            <div class="stat"><span class="label">DEF</span><div class="bar"><div class="fill" style="width: 57%;"></div></div><span class="stat-val">85</span></div>
+                            <div class="stat"><span class="label">SpATK</span><div class="bar"><div class="fill" style="width: 60%;"></div></div><span class="stat-val">90</span></div>
+                            <div class="stat"><span class="label">SpDEF</span><div class="bar"><div class="fill" style="width: 53%;"></div></div><span class="stat-val">80</span></div>
+                            <div class="stat"><span class="label">SPD</span><div class="bar"><div class="fill" style="width: 47%;"></div></div><span class="stat-val">70</span></div>
+                        </div>
+                        <p class="lore">A cunning swamp predator that drains water to lure prey, only to unleash a deadly flood once they are trapped.</p>
+                    </div>
+                </div>
+
+                <!-- Pugot (ID 5) -->
+                <div class="creature-card card-glass">
+                    <div class="creature-image-wrapper">
+                        <img src="./img/Creature/Region_01/Pugot/front.png" alt="Pugot" class="creature-front">
+                        <div class="badges">
+                            <img src="./img/TypeImages/diwa.png" alt="Diwa Type" class="type-badge" title="Diwa">
+                            <img src="./img/TypeImages/anino.png" alt="Anino Type" class="type-badge" title="Anino">
+                            <img src="./img/RaritySprite/Bihira.png" alt="Bihira" class="rarity-badge" title="Bihira (Rare)">
+                        </div>
+                    </div>
+                    <div class="creature-info">
+                        <h3>Pugot</h3>
+                        <div class="stats">
+                            <div class="stat"><span class="label">HP</span><div class="bar"><div class="fill" style="width: 53%;"></div></div><span class="stat-val">80</span></div>
+                            <div class="stat"><span class="label">ATK</span><div class="bar"><div class="fill" style="width: 80%;"></div></div><span class="stat-val">120</span></div>
+                            <div class="stat"><span class="label">DEF</span><div class="bar"><div class="fill" style="width: 47%;"></div></div><span class="stat-val">70</span></div>
+                            <div class="stat"><span class="label">SpATK</span><div class="bar"><div class="fill" style="width: 57%;"></div></div><span class="stat-val">85</span></div>
+                            <div class="stat"><span class="label">SpDEF</span><div class="bar"><div class="fill" style="width: 50%;"></div></div><span class="stat-val">75</span></div>
+                            <div class="stat"><span class="label">SPD</span><div class="bar"><div class="fill" style="width: 73%;"></div></div><span class="stat-val">110</span></div>
+                        </div>
+                        <p class="lore">A headless shadow that roams the night, guarding stolen treasures. It strikes fear into those who cross its path.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Agimat (Items) Section -->
+    <section class="section items-section" id="items">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tools of the Kasunduan</h2>
+                <div class="separator"></div>
+                <p>Sacred items known as Agimat or Anting-Anting are essential to forging your pacts.</p>
+            </div>
+
+            <div class="items-grid">
+                <div class="item-card">
+                    <img src="./img/catchingItem/selyo.png" alt="Selyo">
+                    <h4>Selyo</h4>
+                    <p>A basic seal inscribed with indigenous script to bind common spirits.</p>
+                </div>
+                <div class="item-card">
+                    <img src="./img/catchingItem/bilog ngdiwa.png" alt="Bilog ng Diwa">
+                    <h4>Bilog ng Diwa</h4>
+                    <p>Captures the essence of entities, forging a profound connection with the wielder.</p>
+                </div>
+                <div class="item-card">
+                    <img src="./img/catchingItem/anting ng diwata.png" alt="Anting ng Diwata">
+                    <h4>Anting ng Diwata</h4>
+                    <p>Blessed by the forest nymphs. Increases the chance to calm hostile nature spirits.</p>
+                </div>
+                <div class="item-card">
+                    <img src="./img/catchingItem/gintong bilog ng diwa.png" alt="Gintong Bilog ng Diwa">
+                    <h4>Gintong Bilog ng Diwa</h4>
+                    <p>A gilded artifact of immense spiritual gravity. Capable of binding Epic manifestations.</p>
+                </div>
+                <div class="item-card">
+                    <img src="./img/catchingItem/sisidlan ng buwan.png" alt="Sisidlan ng Buwan">
+                    <h4>Sisidlan ng Buwan</h4>
+                    <p>Crafted beneath a lunar eclipse, this vessel pacifies beings of the night and shadows.</p>
+                </div>
+                <div class="item-card">
+                    <img src="./img/catchingItem/selyo ng diwa suprema.png" alt="Selyo ng Diwa Suprema">
+                    <h4>Selyo ng Diwa Suprema</h4>
+                    <p>Exudes a commanding presence. Used only for entities of myth and legend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Type Chart -->
+    <section class="section type-chart-section" id="typechart">
+        <div class="container">
+            <div class="section-header">
+                <h2>Elemental Resonance</h2>
+                <div class="separator"></div>
+                <p>Mastering the interactions between different elemental forces is key to claiming victory.</p>
+            </div>
+
+            <div class="type-chart-wrapper card-glass">
+                <!-- A dynamic interactive grid will be generated via JS based on Instruction.txt -->
+                <div id="type-chart-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback and Download -->
+    <section class="section cta-section" id="download">
+        <div class="container">
+            <div class="cta-layout">
+                <div class="feedback-form card-glass">
+                    <h3>Send us a Message</h3>
+                    <form id="feedbackForm">
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Feedback</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit Feedback</button>
+                    </form>
+                </div>
+
+                <div class="download-info">
+                    <h2>Join the Kasunduan</h2>
+                    <p>Download Mitolohiya today and explore the mysteries of the Philippine archipelago.</p>
+                    <div class="download-buttons">
+                        <button class="btn-download btn-disabled" disabled title="Coming Soon">
+                            <span>Download for PC</span>
+                            <small>Windows — Coming Soon</small>
+                        </button>
+                        <a href="https://github.com/troygarciagg-rgb/mitolohiya-game-app/releases/latest/download/Mitolohiya.apk" class="btn-download">
+                            <span>Download for Android</span>
+                            <small>APK · GitHub Release</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mitolohiya: Ang Kasunduan. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+ public class TypeChart
+{
+    // Type order:                Normal, Apoy, Tubig, Hangin, Hayop, Kulam, Kidlat, Diwa, Puno, Anino, Lupa, Araw, Buwan
+    static float[][] chart =
+    {
+        /* Normal */ new float[] { 1f , 1f , 1f , 1f , 1f , 1f , 1f , 0f , 1f , 0f ,0.5f, 1f , 1f , 1f },
+        /* Apoy */   new float[] { 1f ,0.5f,0.5f, 1f , 1f , 1f , 1f , 1f , 2f , 1f ,0.5f, 1f , 1f , 1f },
+        /* Tubig */  new float[] { 1f , 2f ,0.5f, 1f , 1f , 1f ,0.5f, 1f , 2f , 1f , 2f , 1f , 1f , 1f },
+        /* Hangin */ new float[] { 1f , 1f , 1f ,0.5f, 2f , 1f ,0.5f, 1f , 2f , 1f ,0.5f, 1f , 1f , 1f },
+        /* Hayop */  new float[] { 1f , 1f , 1f ,0.5f, 1f ,0.5f, 1f , 1f , 2f , 1f , 1f , 1f , 1f , 1f },
+        /* Kulam */  new float[] { 1f , 1f , 1f , 1f , 2f ,0.5f, 1f , 2f , 1f , 2f , 1f , 1f , 1f , 1f },
+        /* Kidlat */ new float[] { 1f , 1f , 2f , 2f , 1f , 1f ,0.5f, 1f , 1f , 1f , 0f , 1f , 1f , 1f },
+        /* Diwa */   new float[] { 0f , 1f , 1f , 1f , 1f , 1f ,0.5f, 1f , 2f , 1f , 2f , 1f , 1f , 1f },
+        /* Puno */   new float[] { 1f ,0.5f, 2f ,0.5f, 1f , 1f , 1f , 1f ,0.5f, 1f , 2f , 1f , 1f , 1f },
+        /* Anino */  new float[] { 0f , 1f , 1f , 1f , 1f , 2f , 1f , 1f , 1f ,0.5f, 1f ,0.5f, 1f , 2f },
+        /* Lupa */   new float[] {0.5f, 2f , 1f , 0f , 1f , 1f , 2f , 1f ,0.5f, 1f , 1f , 1f , 1f , 1f },
+        /* Araw */   new float[] { 1f , 2f , 1f , 1f , 1f , 1f , 1f , 2f , 2f ,0.5f, 1f ,0.5f, 1f , 2f },
+        /* Buwan */  new float[] { 1f , 1f , 1f , 1f , 1f , 2f , 1f , 2f , 1f , 2f , 1f , 1f ,0.5f,0.5f}
+    };
+
+
+this is the typeChart effectives which specifically talks the counter measure of each rarity.
+
+i want you to make a website that showcase the game "Mitolohiya: Ang Kasunduan" inside this folder i provided the necessary file or images u needed to make the website fully working. 
+
+inside the /Creature it contains the Creature for each region. currently we'll only work on the region 1 creatures which is listed inside the folder. feel free to use image there. those creatures are from Ilocos. for the map of the game it is inside /Map inside that you'll see the MapPH which is the overall maps of the game and it is divided into 3 big section, the Luzon, Visayas, and Mindanao and their regions. we have now only to display the 5 regions that i have inside the folder Region in the /Map. we also have the Poster /poster this primarily the poster that shows the game. /RaritySprite are the img for rarity type of the game. and lastly the /TypeImages this contains the type of each Creature. This game is Pokémon inspired game, instead of catching pokemon you will catch Mythical Creature from Philippine Mythology. we also use agimatList which is inside the /catchingItem. those are the items to be used for the catching the creatures. i want the website to contain the Philippine style ethnical. for each creature leave description, a stats spaces because i'll provide their stats later on as well for their stories of folklore. for the agimat do a made-up description. i just want to see the overall design that you are about to make. make a feedback page too and a download link page for the game. 
